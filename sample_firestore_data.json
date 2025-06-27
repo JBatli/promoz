@@ -1,0 +1,398 @@
+{
+  "users": [
+    {
+      "id": "user_cust_1",
+      "email": "customer1@example.com",
+      "password": "pass",
+      "role": "Customer"
+    },
+    {
+      "id": "user_cust_2",
+      "email": "customer2@example.com",
+      "password": "pass",
+      "role": "Customer"
+    },
+    {
+      "id": "user_vend_1",
+      "email": "vendor1@example.com",
+      "password": "pass",
+      "role": "Vendor"
+    },
+    {
+      "id": "user_vend_2",
+      "email": "vendor2@example.com",
+      "password": "pass",
+      "role": "Vendor"
+    },
+    {
+      "id": "user_admin_1",
+      "email": "admin@example.com",
+      "password": "pass",
+      "role": "Admin"
+    }
+  ],
+  "customers": [
+    {
+      "id": "cust_1",
+      "userId": "user_cust_1",
+      "name": "Alice Smith",
+      "contactInformation": "123-456-7890"
+    },
+    {
+      "id": "cust_2",
+      "userId": "user_cust_2",
+      "name": "Bob Johnson",
+      "contactInformation": "987-654-3210"
+    }
+  ],
+  "vendors": [
+    {
+      "id": "vend_1",
+      "userId": "user_vend_1",
+      "name": "QuickFix Services",
+      "contactInformation": "555-123-4567",
+      "addressId": "addr_vend_1"
+    },
+    {
+      "id": "vend_2",
+      "userId": "user_vend_2",
+      "name": "Fashion Finds Store",
+      "contactInformation": "555-987-6543",
+      "addressId": "addr_vend_2"
+    }
+  ],
+  "admins": [
+    {
+      "id": "admin_1",
+      "userId": "user_admin_1"
+    }
+  ],
+  "addresses": [
+    {
+      "id": "addr_vend_1",
+      "street": "101 Service Lane",
+      "city": "Serviceton",
+      "stateProvince": "CA",
+      "postalCode": "90210",
+      "country": "USA"
+    },
+    {
+      "id": "addr_vend_2",
+      "street": "202 Retail Road",
+      "city": "Shopville",
+      "stateProvince": "NY",
+      "postalCode": "10001",
+      "country": "USA"
+    }
+  ],
+  "offerings": [
+    {
+      "id": "offering_1",
+      "vendorId": "vend_1",
+      "name": "Standard Haircut",
+      "description": "A professional standard haircut for men and women.",
+      "categoryId": "category_services",
+      "price": 25.00,
+      "minimumUnit": 1,
+      "attributes": {
+        "duration": "45 minutes"
+      },
+      "imageUrls": [],
+      "availability": {
+        "Monday": "9 AM - 6 PM",
+        "Tuesday": "9 AM - 6 PM",
+        "Wednesday": "9 AM - 6 PM",
+        "Thursday": "9 AM - 6 PM",
+        "Friday": "9 AM - 6 PM",
+        "Saturday": "10 AM - 4 PM"
+      },
+      "status": "Available"
+    },
+    {
+      "id": "offering_2",
+      "vendorId": "vend_1",
+      "name": "Dog Wash and Grooming",
+      "description": "Full service dog wash, brush, and nail trim.",
+      "categoryId": "category_services",
+      "price": 40.00,
+      "minimumUnit": 1,
+      "attributes": {
+        "duration": "1 hour 30 minutes",
+        "breedSize": "Up to 50 lbs"
+      },
+      "imageUrls": [],
+      "availability": {
+        "Monday": "10 AM - 5 PM",
+        "Wednesday": "10 AM - 5 PM",
+        "Friday": "10 AM - 5 PM"
+      },
+      "status": "Available"
+    },
+    {
+      "id": "offering_3",
+      "vendorId": "vend_1",
+      "name": "Manicure and Pedicure",
+      "description": "Relaxing manicure and pedicure with choice of polish.",
+      "categoryId": "category_services",
+      "price": 55.00,
+      "minimumUnit": 1,
+      "attributes": {
+        "duration": "1 hour"
+      },
+      "imageUrls": [],
+      "availability": {
+        "Tuesday": "9 AM - 7 PM",
+        "Thursday": "9 AM - 7 PM",
+        "Saturday": "11 AM - 3 PM"
+      },
+      "status": "Available"
+    },
+    {
+      "id": "offering_4",
+      "vendorId": "vend_1",
+      "name": "Oil Change Service",
+      "description": "Standard oil change and filter replacement for most cars.",
+      "categoryId": "category_services",
+      "price": 60.00,
+      "minimumUnit": 1,
+      "attributes": {
+        "duration": "30 minutes",
+        "vehicleType": "Sedan, SUV"
+      },
+      "imageUrls": [],
+      "availability": {
+        "Monday": "8 AM - 5 PM",
+        "Tuesday": "8 AM - 5 PM",
+        "Wednesday": "8 AM - 5 PM",
+        "Thursday": "8 AM - 5 PM",
+        "Friday": "8 AM - 5 PM"
+      },
+      "status": "Available"
+    },
+    {
+      "id": "offering_5",
+      "vendorId": "vend_2",
+      "name": "Running Shoes",
+      "description": "Comfortable running shoes for your daily workouts.",
+      "categoryId": "category_products",
+      "price": 80.00,
+      "minimumUnit": 1,
+      "attributes": {
+        "brand": "SportyStride",
+        "sizes": ["US 8", "US 9", "US 10"]
+      },
+      "imageUrls": [],
+      "availability": {},
+      "status": "Available"
+    },
+    {
+      "id": "offering_6",
+      "vendorId": "vend_2",
+      "name": "Leather Handbag",
+      "description": "Stylish leather handbag for everyday use.",
+      "categoryId": "category_products",
+      "price": 120.00,
+      "minimumUnit": 1,
+      "attributes": {
+        "color": "Black",
+        "material": "Genuine Leather"
+      },
+      "imageUrls": [],
+      "availability": {},
+      "status": "Available"
+    },
+    {
+      "id": "offering_7",
+      "vendorId": "vend_2",
+      "name": "Organic Apples (per lb)",
+      "description": "Fresh, organic apples sold by the pound.",
+      "categoryId": "category_products",
+      "price": 2.50,
+      "minimumUnit": 0.5,
+      "attributes": {
+        "origin": "Local Farm"
+      },
+      "imageUrls": [],
+      "availability": {},
+      "status": "Available"
+    },
+    {
+      "id": "offering_8",
+      "vendorId": "vend_2",
+      "name": "Whole Wheat Bread",
+      "description": "Freshly baked whole wheat bread.",
+      "categoryId": "category_products",
+      "price": 3.00,
+      "minimumUnit": 1,
+      "attributes": {
+        "weight": "1 lb"
+      },
+      "imageUrls": [],
+      "availability": {},
+      "status": "Available"
+    },
+    {
+      "id": "offering_9",
+      "vendorId": "vend_2",
+      "name": "Cotton Socks (3-pack)",
+      "description": "Comfortable cotton socks in a pack of three.",
+      "categoryId": "category_products",
+      "price": 10.00,
+      "minimumUnit": 1,
+      "attributes": {
+        "sizes": ["Small", "Medium", "Large"],
+        "color": "Assorted"
+      },
+      "imageUrls": [],
+      "availability": {},
+      "status": "Available"
+    },
+    {
+      "id": "offering_10",
+      "vendorId": "vend_2",
+      "name": "Stylish Scarf",
+      "description": "Lightweight and stylish scarf.",
+      "categoryId": "category_products",
+      "price": 20.00,
+      "minimumUnit": 1,
+      "attributes": {
+        "material": "Polyester"
+      },
+      "imageUrls": [],
+      "availability": {},
+      "status": "Available"
+    }
+  ],
+  "promotions": [
+    {
+      "id": "promo_1",
+      "offeringId": "offering_1",
+      "code": "HAIRCUT10",
+      "description": "10% off standard haircut.",
+      "discountType": "Percentage",
+      "discountValue": 10.0,
+      "startDate": "2023-10-26T00:00:00Z",
+      "endDate": "2023-11-30T23:59:59Z"
+    },
+    {
+      "id": "promo_2",
+      "offeringId": "offering_5",
+      "code": "SHOESALE",
+      "description": "$15 off running shoes.",
+      "discountType": "FixedAmount",
+      "discountValue": 15.00,
+      "startDate": "2023-10-20T00:00:00Z",
+      "endDate": "2023-11-15T23:59:59Z"
+    }
+  ],
+  "bookings": [
+    {
+      "id": "booking_1",
+      "customerId": "cust_1",
+      "offeringId": "offering_1",
+      "vendorId": "vend_1",
+      "bookingDate": "2023-10-28T14:00:00Z",
+      "status": "Confirmed",
+      "totalPrice": 25.00
+    }
+  ],
+  "reviews": [
+    {
+      "id": "review_1",
+      "customerId": "cust_1",
+      "offeringId": "offering_1",
+      "rating": 5.0,
+      "comment": "Great haircut!",
+      "reviewDate": "2023-10-28T15:00:00Z"
+    }
+  ],
+  "customerPreferences": [
+    {
+      "id": "cust_pref_1",
+      "customerId": "cust_1",
+      "preferredCategories": ["category_services", "category_products"],
+      "communicationPreferences": {
+        "emailNotifications": true,
+        "pushNotifications": false
+      }
+    }
+  ],
+  "vendorPreferences": [
+    {
+      "id": "vend_pref_1",
+      "vendorId": "vend_1",
+      "businessHours": {
+        "Monday": "9 AM - 6 PM",
+        "Tuesday": "9 AM - 6 PM",
+        "Wednesday": "9 AM - 6 PM",
+        "Thursday": "9 AM - 6 PM",
+        "Friday": "9 AM - 6 PM",
+        "Saturday": "10 AM - 4 PM",
+        "Sunday": "Closed"
+      },
+      "serviceArea": "Within 20 miles",
+      "paymentMethods": ["Credit Card", "Debit Card"]
+    },
+    {
+      "id": "vend_pref_2",
+      "vendorId": "vend_2",
+      "businessHours": {
+        "Monday": "10 AM - 7 PM",
+        "Tuesday": "10 AM - 7 PM",
+        "Wednesday": "10 AM - 7 PM",
+        "Thursday": "10 AM - 7 PM",
+        "Friday": "10 AM - 7 PM",
+        "Saturday": "10 AM - 6 PM",
+        "Sunday": "12 PM - 5 PM"
+      },
+      "serviceArea": "Online Shipping",
+      "paymentMethods": ["Credit Card", "PayPal"]
+    }
+  ],
+  "adminSettings": [
+    {
+      "id": "admin_settings_1",
+      "maintenanceMode": false,
+      "newUserApprovalRequired": false,
+      "commissionRate": 5.0
+    }
+  ],
+  "categories": [
+    {
+      "id": "category_services",
+      "name": "Services"
+    },
+    {
+      "id": "category_products",
+      "name": "Products"
+    }
+  ],
+  "auditLogs": [
+    {
+      "id": "audit_log_1",
+      "userId": "user_admin_1",
+      "userRole": "Admin",
+      "action": "Updated Admin Settings",
+      "entityType": "AdminSettings",
+      "entityId": "admin_settings_1",
+      "timestamp": "2023-10-27T10:00:00Z",
+      "details": {
+        "changedFields": ["commissionRate"]
+      },
+      "ipAddress": "192.168.1.1"
+    },
+    {
+      "id": "audit_log_2",
+      "userId": "user_vend_1",
+      "userRole": "Vendor",
+      "action": "Created New Offering",
+      "entityType": "Offering",
+      "entityId": "offering_1",
+      "timestamp": "2023-10-27T10:05:00Z",
+      "details": {
+        "offeringName": "Standard Haircut"
+      },
+      "ipAddress": "192.168.1.10"
+    }
+  ]
+}
